@@ -22,7 +22,7 @@ Complete API Key authentication for Fastify with scopes, multiple sources, and T
 ## Installation
 
 ```bash
-npm install fastify-api-key
+npm install @fracabu/fastify-api-key
 ```
 
 ## Requirements
@@ -34,7 +34,7 @@ npm install fastify-api-key
 
 ```typescript
 import Fastify from 'fastify';
-import fastifyApiKey from 'fastify-api-key';
+import fastifyApiKey from '@fracabu/fastify-api-key';
 
 const app = Fastify();
 
@@ -252,7 +252,7 @@ import {
   timingSafeCompare,
   hasAllScopes,
   hasAnyScope
-} from 'fastify-api-key';
+} from '@fracabu/fastify-api-key';
 
 // Generate a secure API key
 const key = generateApiKey({ prefix: 'myapp', length: 32 });
@@ -275,7 +275,7 @@ import {
   InvalidApiKeyError,
   InsufficientScopesError,
   RateLimitExceededError
-} from 'fastify-api-key';
+} from '@fracabu/fastify-api-key';
 
 // All errors have: code, message, statusCode, toJSON()
 ```
@@ -294,7 +294,7 @@ import type {
   ApiKeyHook,
   ApiKeyGuardOptions,
   ApiKeyData
-} from 'fastify-api-key';
+} from '@fracabu/fastify-api-key';
 
 // request.apiKey and request.apiKeyScopes are properly typed
 app.get('/test', { preHandler: app.apiKey() }, async (request) => {

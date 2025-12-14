@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-12-14
+
+### Changed
+
+- Improved code formatting consistency
+
+### Security
+
+- Added npm provenance for supply chain security
+
 ## [1.0.0] - 2024-12-10
 
 ### Added
@@ -33,5 +43,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Timing-safe string comparison enabled by default
 - API key redaction in request object when `timingSafe=true`
 
-[Unreleased]: https://github.com/fracabu/fastify-api-key/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/fracabu/fastify-api-key/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/fracabu/fastify-api-key/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/fracabu/fastify-api-key/releases/tag/v1.0.0

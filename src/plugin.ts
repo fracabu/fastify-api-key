@@ -25,7 +25,9 @@ export async function fastifyApiKeyPlugin(
   fastify.decorateRequest('apiKeyScopes', undefined);
 
   // Create guard factory
-  const createGuard = (guardOptions: ApiKeyGuardOptions = {}): ((request: FastifyRequest, reply: FastifyReply) => Promise<void>) => {
+  const createGuard = (
+    guardOptions: ApiKeyGuardOptions = {}
+  ): ((request: FastifyRequest, reply: FastifyReply) => Promise<void>) => {
     return async (request: FastifyRequest, reply: FastifyReply): Promise<void> => {
       const shouldAllowAnonymous = guardOptions.allowAnonymous ?? allowAnonymous;
 
@@ -66,7 +68,11 @@ export async function fastifyApiKeyPlugin(
 
       // 3. Validate scopes
       const providedScopes = result.scopes ?? [];
-      const scopeResult = validateScopes(providedScopes, guardOptions.scopes, guardOptions.anyScope);
+      const scopeResult = validateScopes(
+        providedScopes,
+        guardOptions.scopes,
+        guardOptions.anyScope
+      );
 
       if (!scopeResult.valid) {
         const error = new InsufficientScopesError(

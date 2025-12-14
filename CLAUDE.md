@@ -14,6 +14,7 @@ npm run dev            # Build in watch mode
 npm test               # Run tests with Vitest
 npm run test:watch     # Run tests in watch mode
 npm run test:coverage  # Run tests with coverage (90% threshold)
+npx vitest run test/plugin.test.ts  # Run a single test file
 npm run lint           # ESLint (flat config)
 npm run lint:fix       # ESLint with auto-fix
 npm run format         # Prettier format

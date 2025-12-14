@@ -63,7 +63,11 @@ describe('validateScopes', () => {
   describe('combined scopes and anyScope', () => {
     it('should require both scopes AND anyScope to pass', () => {
       // Has all required scopes and at least one anyScope
-      const result = validateScopes(['read', 'write', 'admin'], ['read', 'write'], ['admin', 'super']);
+      const result = validateScopes(
+        ['read', 'write', 'admin'],
+        ['read', 'write'],
+        ['admin', 'super']
+      );
       expect(result.valid).toBe(true);
     });
 

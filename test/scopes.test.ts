@@ -251,17 +251,13 @@ describe('scopes system', () => {
         }),
       });
 
-      app.get(
-        '/users',
-        { preHandler: app.apiKey({ scopes: ['users:read'] }) },
-        async () => ({ users: [] })
-      );
+      app.get('/users', { preHandler: app.apiKey({ scopes: ['users:read'] }) }, async () => ({
+        users: [],
+      }));
 
-      app.post(
-        '/users',
-        { preHandler: app.apiKey({ scopes: ['users:write'] }) },
-        async () => ({ created: true })
-      );
+      app.post('/users', { preHandler: app.apiKey({ scopes: ['users:write'] }) }, async () => ({
+        created: true,
+      }));
 
       app.delete(
         '/users/:id',

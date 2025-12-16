@@ -135,6 +135,36 @@ app.delete('/api/users/:id', {
 
 ---
 
+## Security
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@fracabu/fastify-api-key"><img src="https://img.shields.io/badge/npm-provenance-brightgreen?logo=npm" alt="npm provenance" /></a>
+  <a href="https://github.com/fracabu/fastify-api-key/attestations"><img src="https://img.shields.io/badge/SLSA-Level%202-blue?logo=github" alt="SLSA Level 2" /></a>
+</p>
+
+This package is published with **supply chain security** in mind:
+
+| Feature | Status | Verification |
+|---------|--------|--------------|
+| npm Provenance | ✅ | `npm audit signatures` |
+| GitHub Attestations | ✅ | `gh attestation verify` |
+| SLSA Level | 2 | Build provenance |
+| Timing-safe comparison | ✅ | Prevents timing attacks |
+
+### Verify Package Authenticity
+
+```bash
+# Verify npm provenance
+npm audit signatures
+
+# Verify GitHub attestation
+gh attestation verify $(npm pack @fracabu/fastify-api-key) --owner fracabu
+```
+
+For more details, see our [Wiki - Security](https://github.com/fracabu/fastify-api-key/wiki/Security).
+
+---
+
 ## Requirements
 
 - Node.js >= 20.0.0

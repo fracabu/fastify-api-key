@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2025-12-16
+
+### Added
+
+- GitHub artifact attestations for SLSA Level 2 compliance
+- Security section in README with verification instructions
+
+### Security
+
+- Dual attestation: npm provenance + GitHub attestations
+- Tarball attached to GitHub releases for verification
+
 ## [1.0.1] - 2025-12-14
 
 ### Changed
@@ -43,6 +55,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Timing-safe string comparison enabled by default
 - API key redaction in request object when `timingSafe=true`
 
-[Unreleased]: https://github.com/fracabu/fastify-api-key/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/fracabu/fastify-api-key/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/fracabu/fastify-api-key/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/fracabu/fastify-api-key/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/fracabu/fastify-api-key/releases/tag/v1.0.0

@@ -1,6 +1,6 @@
 {
   "name": "@fracabu/fastify-api-key",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Complete API Key authentication for Fastify with scopes, multiple sources, and TypeScript support",
   "author": "fracabu",
   "license": "MIT",
